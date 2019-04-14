@@ -36,15 +36,17 @@ end
 def draw?(board)
   if won?(board)==false && full?(board)==true
     return true
-  elsif full?(board)==false
-    return false
-  else
+  else 
     return false
   end
 end
 
 def over?(board)
-  if won?(board).class==Array
+  if won?(board).class==Array || draw?(board)==true || full?(board)==true
+    return true
+  else
+    return false
+  end
 end
 
 def winnner
