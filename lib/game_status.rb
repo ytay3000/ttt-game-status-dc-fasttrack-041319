@@ -53,7 +53,5 @@ def winnner(board)
   if won?(board).class==Array
     winplay = won?(board)
     return board[winplay[0]]
-  else
-    return nil
   end
 end
