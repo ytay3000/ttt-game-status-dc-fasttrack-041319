@@ -49,7 +49,7 @@ def over?(board)
   end
 end
 
-def winnner(board)
+def winner(board)
   if won?(board).class==Array
     winplay = won?(board)
     return board[winplay[0]]
